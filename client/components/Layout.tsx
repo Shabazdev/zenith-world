@@ -13,16 +13,16 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="flex flex-col min-h-screen">
       {/* Notification Bar */}
       {notificationOpen && (
-        <div className="w-full bg-[#38cb89] px-20 py-2 flex items-center justify-between gap-10 flex-wrap">
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-3 font-semibold text-sm">
+        <div className="w-full bg-[#38cb89] px-4 md:px-20 py-2 flex items-center justify-between gap-2 md:gap-10 flex-wrap">
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className="flex items-center gap-2 md:gap-3 font-semibold text-xs md:text-sm">
               <span>🎟️</span>
               <span className="text-black">30% off storewide — Limited time!</span>
             </div>
           </div>
           <button
             onClick={() => setNotificationOpen(false)}
-            className="flex items-center gap-2 text-black font-medium text-sm border-b border-black pb-1 hover:opacity-70"
+            className="hidden md:flex items-center gap-2 text-black font-medium text-sm border-b border-black pb-1 hover:opacity-70"
           >
             Shop Now
           </button>
@@ -30,7 +30,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             onClick={() => setNotificationOpen(false)}
             className="ml-auto text-black hover:opacity-70"
           >
-            <X size={20} />
+            <X size={16} className="md:w-5 md:h-5" />
           </button>
         </div>
       )}
