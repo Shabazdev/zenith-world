@@ -11,20 +11,20 @@ const categories = [
 
 export const Categories: React.FC = () => {
   return (
-    <section className="w-full bg-white px-20 py-20">
-      <h2 className="text-5xl font-medium text-center mb-12">Shop by Categories</h2>
+    <section className="w-full bg-white px-4 md:px-20 py-12 md:py-20">
+      <h2 className="text-3xl md:text-5xl font-medium text-center mb-8 md:mb-12">Shop by Categories</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {categories.map((category) => (
           <div key={category.name} className="group cursor-pointer">
-            <div className="mb-6 overflow-hidden rounded-lg">
+            <div className="mb-4 md:mb-6 overflow-hidden rounded-lg">
               <img
                 src={category.image}
                 alt={category.name}
-                className="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
+                className="w-full h-40 md:h-64 object-cover group-hover:scale-105 transition duration-300"
               />
             </div>
-            <h3 className="text-2xl font-medium text-center text-gray-900">
+            <h3 className="text-lg md:text-2xl font-medium text-center text-gray-900">
               {category.name}
             </h3>
           </div>
