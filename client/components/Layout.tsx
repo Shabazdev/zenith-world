@@ -36,15 +36,15 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       )}
 
       {/* Navigation Bar */}
-      <nav className="w-full bg-white border-b border-gray-200 px-20 py-4">
-        <div className="flex items-center justify-between gap-10 flex-wrap">
+      <nav className="w-full bg-white border-b border-gray-200 md:px-20 px-4 py-4">
+        <div className="flex items-center justify-between gap-4 md:gap-10">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-medium">
+          <Link to="/" className="text-xl md:text-2xl font-medium">
             3legant<span className="text-gray-500">.</span>
           </Link>
 
-          {/* Nav Links */}
-          <div className="flex items-center gap-10 text-sm font-medium text-gray-900">
+          {/* Nav Links - Hidden on Mobile */}
+          <div className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-900">
             <Link to="/" className="hover:opacity-70">Home</Link>
             <Link to="/" className="hover:opacity-70">Shop</Link>
             <Link to="/" className="hover:opacity-70">Product</Link>
@@ -52,15 +52,15 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 md:gap-4">
             <button className="hover:opacity-70">
-              <Search size={24} />
+              <Search size={20} className="md:w-6 md:h-6" />
             </button>
             <button className="hover:opacity-70">
-              <User size={24} />
+              <User size={20} className="md:w-6 md:h-6" />
             </button>
             <button className="hover:opacity-70">
-              <ShoppingCart size={24} />
+              <ShoppingCart size={20} className="md:w-6 md:h-6" />
             </button>
           </div>
         </div>
