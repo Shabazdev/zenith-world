@@ -1,10 +1,12 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
 export const ShopCollection: React.FC = () => {
   return (
     <section className="w-full bg-white px-4 md:px-20 py-8 md:py-12">
-      <h2 className="text-3xl md:text-5xl font-medium mb-8 md:mb-12">Shop Collection</h2>
+      <h2 className="text-3xl md:text-5xl font-medium mb-8 md:mb-12">
+        Shop Collection
+      </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
         {/* Large Card */}
@@ -15,7 +17,9 @@ export const ShopCollection: React.FC = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="relative z-10">
-            <h3 className="text-2xl md:text-4xl font-medium mb-2 md:mb-3">Juniors Set</h3>
+            <h3 className="text-2xl md:text-4xl font-medium mb-2 md:mb-3">
+              Juniors Set
+            </h3>
             <button className="flex items-center gap-2 text-black font-medium border-b border-black pb-1 hover:opacity-70 text-sm md:text-base">
               Collections
               <ArrowRight size={16} className="md:w-5 md:h-5" />
@@ -33,7 +37,9 @@ export const ShopCollection: React.FC = () => {
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="relative z-10">
-              <h3 className="text-2xl md:text-4xl font-medium mb-2 md:mb-3">Men's Set</h3>
+              <h3 className="text-2xl md:text-4xl font-medium mb-2 md:mb-3">
+                Men's Set
+              </h3>
               <button className="flex items-center gap-2 text-black font-medium border-b border-black pb-1 hover:opacity-70 text-sm md:text-base">
                 Collections
                 <ArrowRight size={16} className="md:w-5 md:h-5" />
@@ -49,7 +55,9 @@ export const ShopCollection: React.FC = () => {
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="relative z-10">
-              <h3 className="text-2xl md:text-4xl font-medium mb-2 md:mb-3">Women's Set</h3>
+              <h3 className="text-2xl md:text-4xl font-medium mb-2 md:mb-3">
+                Women's Set
+              </h3>
               <button className="flex items-center gap-2 text-black font-medium border-b border-black pb-1 hover:opacity-70 text-sm md:text-base">
                 Collections
                 <ArrowRight size={16} className="md:w-5 md:h-5" />

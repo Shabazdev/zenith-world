@@ -1,18 +1,21 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
 const articles = [
   {
-    title: 'Air Jordan x Travis Scott Event',
-    image: 'https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/a1e146ff7178c0130c93d82e1a1c578da17c47ac?placeholderIfAbsent=true',
+    title: "Air Jordan x Travis Scott Event",
+    image:
+      "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/a1e146ff7178c0130c93d82e1a1c578da17c47ac?placeholderIfAbsent=true",
   },
   {
-    title: 'The timeless classics on the green',
-    image: 'https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/9978944cb1cedca6a678f6efc4cf0a4228574a4b?placeholderIfAbsent=true',
+    title: "The timeless classics on the green",
+    image:
+      "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/9978944cb1cedca6a678f6efc4cf0a4228574a4b?placeholderIfAbsent=true",
   },
   {
-    title: 'The 2023 Ryder Cup',
-    image: 'https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/02998d345ba27cca2998e7486f06e0a82a82c138?placeholderIfAbsent=true',
+    title: "The 2023 Ryder Cup",
+    image:
+      "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/02998d345ba27cca2998e7486f06e0a82a82c138?placeholderIfAbsent=true",
   },
 ];
 
@@ -37,7 +40,9 @@ export const BlogSection: React.FC = () => {
                 className="w-full h-40 md:h-64 object-cover group-hover:scale-105 transition duration-300"
               />
             </div>
-            <h3 className="text-lg md:text-xl font-medium mb-3 md:mb-4">{article.title}</h3>
+            <h3 className="text-lg md:text-xl font-medium mb-3 md:mb-4">
+              {article.title}
+            </h3>
             <button className="flex items-center gap-2 text-black font-medium border-b border-black pb-1 hover:opacity-70 text-sm md:text-base">
               Read More
               <ArrowRight size={16} className="md:w-5 md:h-5" />

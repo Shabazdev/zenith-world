@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export const SaleBanner: React.FC = () => {
   return (
@@ -15,9 +15,15 @@ export const SaleBanner: React.FC = () => {
       {/* Right Content */}
       <div className="w-full md:w-1/2 bg-black text-white flex items-center justify-center px-4 md:px-20 py-12 md:py-20">
         <div className="max-w-2xl">
-          <p className="text-[#38cb89] text-xs md:text-sm font-bold uppercase mb-3 md:mb-4">Limited Edition</p>
-          <h2 className="text-3xl md:text-5xl font-medium mb-3 md:mb-4">Hurry up! 30% OFF</h2>
-          <p className="text-lg md:text-xl mb-6 md:mb-8">Find clubs that are right for your game</p>
+          <p className="text-[#38cb89] text-xs md:text-sm font-bold uppercase mb-3 md:mb-4">
+            Limited Edition
+          </p>
+          <h2 className="text-3xl md:text-5xl font-medium mb-3 md:mb-4">
+            Hurry up! 30% OFF
+          </h2>
+          <p className="text-lg md:text-xl mb-6 md:mb-8">
+            Find clubs that are right for your game
+          </p>
 
           {/* Timer */}
           <div className="mb-6 md:mb-8">

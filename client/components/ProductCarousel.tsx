@@ -1,43 +1,48 @@
-import React from 'react';
-import { Star } from 'lucide-react';
+import React from "react";
+import { Star } from "lucide-react";
 
 const products = [
   {
     id: 1,
     name: "Shark - Men's cabretta white golf glove",
-    image: "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/3097dc3e9589839eb8749ea5a597ef6c8f04f159?placeholderIfAbsent=true",
-    price: 19.00,
+    image:
+      "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/3097dc3e9589839eb8749ea5a597ef6c8f04f159?placeholderIfAbsent=true",
+    price: 19.0,
     badge: "HOT",
   },
   {
     id: 2,
     name: "Greg Norman - Men's Shark Logo Golf Polo Shirt",
-    image: "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/42df158a9c2b4ce3ec020949ed107e35fe1944bf?placeholderIfAbsent=true",
+    image:
+      "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/42df158a9c2b4ce3ec020949ed107e35fe1944bf?placeholderIfAbsent=true",
     price: 24.99,
-    originalPrice: 40.00,
+    originalPrice: 40.0,
     badge: "HOT",
     discount: "-50%",
   },
   {
     id: 3,
     name: "G/FORE - Mens Left Glove Snow 2023",
-    image: "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/e7f572ac619bac3daa924b177aec3b212303b397?placeholderIfAbsent=true",
-    price: 30.00,
+    image:
+      "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/e7f572ac619bac3daa924b177aec3b212303b397?placeholderIfAbsent=true",
+    price: 30.0,
     badge: "HOT",
   },
   {
     id: 4,
     name: "Utility Rover-R Double Strap Bag All Black - 2023",
-    image: "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/577bfaceede053800a1c434ba173c318b3f5b7bc?placeholderIfAbsent=true",
+    image:
+      "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/577bfaceede053800a1c434ba173c318b3f5b7bc?placeholderIfAbsent=true",
     price: 209.99,
     badge: "HOT",
   },
   {
     id: 5,
     name: "Air Jordan 1 Low G Black/Black/Iron Grey - SS23",
-    image: "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/d010c92f0c8cac9a06e20f61b49edeadaadd5589?placeholderIfAbsent=true",
+    image:
+      "https://api.builder.io/api/v1/image/assets/620177adf3e549dab55eb230a072e30b/d010c92f0c8cac9a06e20f61b49edeadaadd5589?placeholderIfAbsent=true",
     price: 111.99,
-    originalPrice: 200.00,
+    originalPrice: 200.0,
     badge: "HOT",
     discount: "-50%",
   },
@@ -83,14 +88,24 @@ export const ProductCarousel: React.FC = () => {
             {/* Product Info */}
             <div className="flex gap-1 mb-2">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={12} className={`${i < 5 ? 'fill-black' : ''} md:w-4 md:h-4`} />
+                <Star
+                  key={i}
+                  size={12}
+                  className={`${i < 5 ? "fill-black" : ""} md:w-4 md:h-4`}
+                />
               ))}
             </div>
-            <h3 className="font-medium text-xs md:text-sm mb-2 line-clamp-2">{product.name}</h3>
+            <h3 className="font-medium text-xs md:text-sm mb-2 line-clamp-2">
+              {product.name}
+            </h3>
             <div className="flex items-center gap-2 md:gap-3">
-              <span className="font-medium text-sm md:text-base">${product.price.toFixed(2)}</span>
+              <span className="font-medium text-sm md:text-base">
+                ${product.price.toFixed(2)}
+              </span>
               {product.originalPrice && (
-                <span className="text-gray-400 line-through text-xs md:text-sm">${product.originalPrice.toFixed(2)}</span>
+                <span className="text-gray-400 line-through text-xs md:text-sm">
+                  ${product.originalPrice.toFixed(2)}
+                </span>
               )}
             </div>
           </div>
